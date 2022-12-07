@@ -2,7 +2,7 @@
   "name": "nosql_social_network",
   "version": "1.0.0",
   "description": "NoSQL Social Media API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
