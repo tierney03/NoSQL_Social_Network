@@ -19,3 +19,9 @@ const reactionSchema = new Schema({
     get: (timestamp) => timestamp.toLocaleDateString(),
   },
 });
+
+reactionSchema.virtual("thoughtCount").get(function () {
+  return this.thoughts.length;
+});
+
+module.exports = Reaction;
