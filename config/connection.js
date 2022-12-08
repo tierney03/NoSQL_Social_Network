@@ -1,11 +1,11 @@
 const { connect, connection } = require("mongoose");
 
 const connectionString =
-  process.env.MONGODB_UR || 'mongodb://127.0.0.1"27017/usersDB';
+  process.env.MONGODB_UR || "mongodb://localhost:27017/NoSQL-Social-Network";
 
 connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-module.exports = mongoose.connection;
+module.exports = connection;
